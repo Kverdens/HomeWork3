@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    font-family: fantasy;
+    font-family: sans-serif;
     font-weight: bold;
     background-color: #87FFE9;
  
@@ -15,8 +15,20 @@ body {
 main h1{
     text-align: center;
     font-size: 2em;
-    font-family: fantasy;
+    font-family: sans-serif;
     
+}
+
+.helloText{
+    animation:blinkingText 1.2s infinite;
+    background-color: #92E8A7;
+}
+@keyframes blinkingText{
+    0%{     color: black;    }
+    49%{    color: aquamarine; }
+    60%{    color: transparent; }
+    99%{    color: transparent;  }
+    100%{   color: #000;    }
 }
 
 #container {
@@ -52,6 +64,10 @@ main h1{
     }
 }    
 
+.picture {
+    width: 100%;
+    max-width: auto;
+}
 /* FIZBUZ class */
 
 .fizbuz {
@@ -165,35 +181,35 @@ main h1{
         background-color: white; 
         color: black; 
         border: 5px solid #FFE8A1;
-        font-family: fantasy;
+        font-family: sans-serif;
       }
       
     #btnTwo {
         background-color: white; 
         color: black; 
         border: 5px solid #FFE8A1;
-        font-family: fantasy;
+        font-family: sans-serif;
       }
       
     #btnThree {
         background-color: white; 
         color: black; 
         border: 5px solid #FFE8A1;
-        font-family: fantasy;
+        font-family: sans-serif;
       }
       
     #btnFour {
         background-color: white;
         color: black;
         border: 5px solid #FFE8A1;
-        font-family: fantasy;
+        font-family: sans-serif;
       }
       
     #btnFive {
         background-color: white;
         color: black;
         border: 5px solid #FFE8A1;
-        font-family: fantasy;
+        font-family: sans-serif;
       }
 
 .hidden {
