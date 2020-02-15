@@ -1,11 +1,48 @@
 console.log("Started my third homework");
+
+const inputMin = document.getElementById("minInput");
+const inputMax = document.getElementById("maxInput");
+const buzzBtn = document.getElementById("buzzBtn");
 // const clearBtn = document.getElementById("clearBtn");
 // const refreshBtn = document.getElementById("refreshBtn");
-const buzzBtn = document.getElementById("buzzBtn");
 // const fizzBtn = document.getElementById("fizzBtn");
 // const fizzbuzzBtn = document.getElementById("fizzbuzzBtn");
 // const main = document.getElementById("element"); 
 
+inputMin.value = 1;
+inputMax.value = 100;
+
+const create = function(){
+    while (main.firstChild) {
+        main.removeChild(main.firstChild);
+    }
+}
+
+for (let i = 1; i <= 100; i++) {
+    let newDiv = document.createElement("div");
+    let newPar = document.createElement("p");
+    
+    newDiv.appendChild(newPar);
+    main.appendChild(newDiv).setAttribute("id", "div_" + i);
+
+    if(i < inputMin.value || i > inputMax.value) {
+        newDiv.style = "display: none";
+    } else {
+        if(i % 3 === 0 && i % 5 === 0) {
+            newPar.appendChild(document.createTextNode(i + " = FIZZ BUZZ"));
+            main.appendChild(newDiv).setAttribute("class", "fizbuz");
+        } else if (i % 3 === 0) {
+            newPar.appendChild(document.createTextNode(i + " = Fizz"));
+            main.appendChild(newDiv).setAttribute("class", "fiz");
+        } else if (i % 5 === 0) {
+            newPar.appendChild(document.createTextNode(i + " = BUZZ"))
+            main.appendChild(newDiv).setAttribute("class", "buz");
+        } else {
+            newPar.appendChild(doNotTrack.createTextNode(i));
+            main.appendChild(newDiv).setAttribute("class", + "num");
+        }
+    }
+};
 
 function addListeners() {
     console.log("Adding listeners");
@@ -172,7 +209,7 @@ function onClickCustom (){
         }
 }
 
-nezinu vai šis ir vajadzīgs
+// nezinu vai šis ir vajadzīgs
 //  function addListeners() {
 //     const submit = document.getElementById('generate');
 //     submit.onclick = onClick;
