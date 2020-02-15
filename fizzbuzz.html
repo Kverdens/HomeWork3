@@ -1,34 +1,34 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FizzBuzzHomeWork3</title>
-    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>third home work FIZZBUZZ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="buzz.css">
     <script src="buzz.js" defer></script>
-    <link rel="stylesheet" href="/buzz.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 <body>
     <main>
-        <h1>FizzBuzz HomeWork</h1>
-    <header id="navContainer">
-        <label>Min number:</label>
-        <input type="number" name="field" id="minInput" min="1" max="99" onpaste="return false">
-        <label>Max number:</label>
-        <input type="number" name="field" id="maxInput" min="2" max="100" onpaste="return false">
-        <button class="btn-Reset" id="btnReset">RESET</button>
-        <button class="btn-Refresh" id="btnRefresh">REFRESH</button>
-        <button class="btn-Fizz" id="btnFizz">FIZZ</button>
-        <button class="btn-Buzz" id="btnBuzz">BUZZ</button>
-        <button class="btn-FizzBuzz" id="btnFizzBuzz">FIZZBUZZ</button>
+        <header>
+        <h1>FIZZ BUZZ Home Work</h1>
+        <div class="navContainer">
+            <label>MIN number: </label><input type="number" name="field"  id="minInput"  min="1" max="99" onpaste="return false">
+            <label>MAX number: </label><input type="number" name="field"  id="maxInput"  min="2" max="100" onpaste="return false">
+            <button id="btnOne">RESET</button>
+            <button id="btnTwo">REFRESH</button>
+            <button id="btnThree">FIZZ</button>
+            <button id="btnFour">BUZZ</button>
+            <button id="btnFive">FIZZBUZZ</button>
+        </div>
     </header>
-    <hr>
-    <h2>Variable outcome</h2>
-    <div id="container">
-
-    </div>
+        <div id="container">
+            
+        </div>
 
     </main>
-    <footer>To improve is to change; to be perfect is to change often.</footer>
+    
 </body>
 </html>
