@@ -2,36 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="wth=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FizzBuzzHomeWork3</title>
-    <link rel="stylesheet" type="text" href="buzz.css">
+    
     <script src="buzz.js" defer></script>
-
+    <link rel="stylesheet" href="/buzz.css">
 </head>
 <body>
-    <header>
+    <main>
         <h1>FizzBuzz HomeWork</h1>
-    <div id="valueBox">
+    <header id="navContainer">
         <label>Min number:</label>
-        <input type="number" name="field" id="minInput" min="1" max="100" onpaste="return false">
+        <input type="number" name="field" id="minInput" min="1" max="99" onpaste="return false">
         <label>Max number:</label>
-        <input type="number" name="field" id="maxInput" min="1" max="100" onpaste="return false">
-    </div>
-    <div id="clickBox">
-        <button id="buzzBtn">Buzz</button>
-        <button id="fizzBtn">Fizz</button>
-        <button id="fizzbuzzBtn">FizzBuzz</button>
-        <button id="clearBtn">Clear all</button>
-        <button id="refreshBtn">Refresh all</button>
-    </div>
+        <input type="number" name="field" id="maxInput" min="2" max="100" onpaste="return false">
+        <button class="btn-Reset" id="btnReset">RESET</button>
+        <button class="btn-Refresh" id="btnRefresh">REFRESH</button>
+        <button class="btn-Fizz" id="btnFizz">FIZZ</button>
+        <button class="btn-Buzz" id="btnBuzz">BUZZ</button>
+        <button class="btn-FizzBuzz" id="btnFizzBuzz">FIZZBUZZ</button>
     </header>
     <hr>
-    <main>
-        <h2>Variable outcome</h2>
-        <hr>
-        <div id="containers">
-         
-        </div>
+    <h2>Variable outcome</h2>
+    <div id="container">
+
+    </div>
+
     </main>
     <footer>To improve is to change; to be perfect is to change often.</footer>
 </body>
